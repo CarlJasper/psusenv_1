@@ -145,7 +145,7 @@
 							</a>
 							<div class="clearfix"></div>
 
-							<div class="collapse in" id="collapseExample" aria-expanded="true" style="">
+							<div class="collapse in" id="collapseExample" aria-expanded="true">
 								<ul class="nav">
 									<li>
 										<a href="#profile">
@@ -168,42 +168,39 @@
 					</div>
 					<ul class="nav">
 						<li class="nav-item">
-							<a href="index.html">
+							<a href="{% url 'home' %}">
 								<i class="la la-dashboard"></i>
 								<p>Dashboard</p>
-								
 							</a>
 						</li>
 						<li class="nav-item">
 							<a href="{% url 'organization-list' %}">
-								<i class="la la-table"></i>
+								<i class="la la-sitemap"></i>
 								<p>Organization</p>
-								
 							</a>
 						</li>
 						<li class="nav-item">
 							<a href="{% url 'orgmember-list' %}">
 								<i class="la la-keyboard-o"></i>
-								<p>Org. Members</p>
+								<p>Org. Member</p>
 							</a>
 						</li>
 						<li class="nav-item">
 							<a href="{% url 'student-list' %}">
-								<i class="la la-th"></i>
+								<i class="la la-user"></i>
 								<p>Student</p>
 							</a>
 						</li>
 						<li class="nav-item">
 							<a href="{% url 'college-list' %}">
-								<i class="la la-bell"></i>
+								<i class="la la-university"></i>
 								<p>College</p>
 							</a>
 						</li>
 						<li class="nav-item">
 							<a href="{% url 'program-list' %}">
-								<i class="la la-font"></i>
-								<p>Program List</p>
-								<span class="badge badge-danger">25</span>
+								<i class="la la-graduation-cap"></i>
+								<p>Program</p>
 							</a>
 						</li>
 					</ul>
@@ -211,7 +208,7 @@
 			</div>
 			<div class="main-panel">
                 {% block content %}
-                {% endblock %}				
+                {% endblock %}
 				<footer class="footer">
 					<div class="container-fluid">
 						<nav class="pull-left">
@@ -268,7 +265,7 @@
 <script src="{% static 'js/core/popper.min.js' %}"></script>
 <script src="{% static 'js/core/bootstrap.min.js' %}"></script>
 <script src="{% static 'js/plugin/chartist/chartist.min.js' %}"></script>
-<script src="{% static 'js/plugin/chartist/plugin/chartist-plugin-tooltip.min.js'%}"></script>
+<script src="{% static 'js/plugin/chartist/plugin/chartist-plugin-tooltip.min.js' %}"></script>
 <script src="{% static 'js/plugin/bootstrap-notify/bootstrap-notify.min.js' %}"></script>
 <script src="{% static 'js/plugin/bootstrap-toggle/bootstrap-toggle.min.js' %}"></script>
 <script src="{% static 'js/plugin/jquery-mapael/jquery.mapael.min.js' %}"></script>
